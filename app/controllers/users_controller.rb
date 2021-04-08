@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+
     skip_before_action :authorized, only: [:create]
 
     def index
@@ -10,7 +11,7 @@ class UsersController < ApplicationController
         user = User.create!({
             name: permitted_params['name'],
             age: permitted_params['age'],
-            email: permitted_params['email']
+            email: permitted_params['email'],
             password: permitted_params['password']
         })
 

@@ -2,6 +2,7 @@ class OrdersController < ApplicationController
 
     def index
         orders = Order.all
+        
         render json: orders
     end
     
@@ -13,6 +14,12 @@ class OrdersController < ApplicationController
 
         render json: order
     end
+
+    def show
+        order = Order.find_by(id: params[:id])
+
+        render json: order
+    end 
 
     def permitted_params
         params.require(:order).permit(:user_id, :ordered_at)

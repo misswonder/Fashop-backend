@@ -4,7 +4,7 @@ class User < ApplicationRecord
     has_many :orders
 
     has_secure_password
-    validates :email, uniqueness: { case_sensitive: false }
+    validates :email, uniqueness: { case_sensitive: true }
     validates :email, presence: true, uniqueness: true
     validates :password, presence: true
     
