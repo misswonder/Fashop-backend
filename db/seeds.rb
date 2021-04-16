@@ -13,10 +13,10 @@ User.destroy_all
 Product.destroy_all
 
 
-u1 = User.create!(name: "Yvonne", age: 21, email: "yvonne@gmail.com", password: "12345")
+u1 = User.create!(name: "Yvonne", age: 25, email: "yvonne@gmail.com", password: "12345")
 u2 = User.create!(name: "Michelle", age: 21, email: "michelle@gmail.com", password: "yuiop")
 u3 = User.create!(name: "Emily", age: 30, email: "emily@gmail.com", password: "asdfg")
-u4 = User.create!(name: "Ashley", age: 25, email: "Ashley@gmail.com", password: "67890")
+u4 = User.create!(name: "Ashley", age: 18, email: "Ashley@gmail.com", password: "67890")
 u5 = User.create!(name: "Sarah", age: 27, email: "sarah@gmail.com", password: "qwert")
 u6 = User.create!(name: "Zoe", age: 35, email: "zoe@gmail.com", password: "zxcvb")
 
