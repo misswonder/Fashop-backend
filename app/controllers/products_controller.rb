@@ -5,6 +5,10 @@ class ProductsController < ApplicationController
     def index
         products = Product.all
 
+        if params[:q].present?
+            products = products.where('name ilike ?', "%#{params[:q]}%")
+        end
+
         render json: products
     end 
 
