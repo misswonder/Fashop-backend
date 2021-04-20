@@ -8,7 +8,7 @@ class OrdersController < ApplicationController
             include: {
                 order_items: {
                     include: {
-                        product: { only: :name }
+                        product: { only: [:name, :image] }
                     }
                 }
             }
