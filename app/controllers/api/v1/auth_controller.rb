@@ -2,12 +2,12 @@ class Api::V1::AuthController < ApplicationController
     
     before_action :authorized, only: [:auto_login]
   
-    #REGISTER
+    #REGISTER 
     def signup
       @user = User.create(signup_params)
       if @user.valid?
         token = encode_token({user_id: @user.id})
-        render json: {user: @user, token: token}
+        render json: {user: @user.serializable_hash(only: [:id, :name, :age, :email]), jwt: token}
       else
         render json: {error: "Invalid username or password"}
       end
