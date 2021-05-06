@@ -36,7 +36,7 @@
 
 ## About The Project
 
-<img src="image/homepage.png" alt="Homepage" width="100%" >
+<img src="image/login.png" alt="Login" width="100%" >
 
 Capstone project for Software Engineering at Flatiron School. The Server side is a Ruby on Rails application running as an API. User data is protected using BCrypt  and JWT authentication. Fashop is a full-stack web application that allows users to browse and purchase on latest trending clothes. Users can signup an account, browse and purchase any selected products in their choices. 
 
