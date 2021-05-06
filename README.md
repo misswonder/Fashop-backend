@@ -65,8 +65,10 @@ Key Features:
    ```sh
    bundle install
    ```
-3. Run seed file
+3. Run PostgreSQL database
    ```sh
+   rails db:create
+   rails db:migrate
    rails db:seed
    ```
 3. Start the Rails app
