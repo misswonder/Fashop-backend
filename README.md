@@ -71,7 +71,7 @@ Key Features:
    ```
 3. Start the Rails app
    ```sh
-   rails s -p <port number>
+   rails s -p (selected port: 3001) 
    ```
 <!-- CONTACT -->
 
