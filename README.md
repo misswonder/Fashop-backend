@@ -71,7 +71,7 @@ Key Features:
    ```
 3. Start the Rails app
    ```sh
-   rails s -p (selected port: 3001) 
+   rails s -p (selected a new port: 3001 or any other ports with an exception of the frontend defaulted port 3000) 
    ```
 <!-- CONTACT -->
 
